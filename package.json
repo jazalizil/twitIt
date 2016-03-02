@@ -7,34 +7,28 @@
   "author": {
     "name": "jazalizil"
   },
-  
   "scripts": {
-    
+    "start": "export NODE_ENV='dev'; node index.js"
   },
   "files": [
-  	
     "app/",
-    
     "index.js"
   ],
   "dependencies": {
-    
     "crossroads": "^0.12.2",
-    
     "hasher": "^1.2.0",
-    
     "machina": "^1.1.2",
-    
-    "signals": "^1.0.0"
-    
+    "pixi-particles": "^1.5.1",
+    "signals": "^1.0.0",
+    "socket.io": "^1.4.5",
+    "socket.io-client": "^1.4.5",
+    "twitter": "^1.2.5"
   },
   "devDependencies": {
-    
-    "babel-core": "^6.2.1",
+    "babel-core": "^6.5.2",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "css-loader": "^0.23.0",
-    
     "exports-loader": "^0.6.2",
     "file-loader": "^0.8.5",
     "gulp": "^3.9.0",
@@ -46,6 +40,5 @@
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9"
-    
   }
 }

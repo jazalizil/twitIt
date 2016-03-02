@@ -2,14 +2,22 @@ module.exports = (function home () {
   'use strict'
 
   let ctrl = {}
-  
   const signals = require('signals')
-  
+  const config = require('../config')
+  var io = require('socket.io-client')
+
 
   
   ctrl.init = function init (state, id) {
-  
-    console.log('home.js - init home controller.')
+    var socket = io.connect(config.API_URL)
+    socket.emit('getTweets', {
+      hashtag: config.HASHTAG
+    })
+    socket.on('tweets', function(data){
+      console.log('tweets: ', data.tweets)
+    })
+    console.log('home.js - init home controller. Getting tweets...')
+
   }
 
   

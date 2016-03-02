@@ -65,6 +65,11 @@ $ gulp dev
 
 
 
+#### In node
+```
+$ npm start
+```
+
 
 
 

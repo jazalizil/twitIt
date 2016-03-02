@@ -35,5 +35,8 @@ node_modules
 
 .DS_Store
 
+# IDE
+.idea/
+
 dist/**
 bin/
