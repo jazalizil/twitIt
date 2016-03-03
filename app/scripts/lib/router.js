@@ -53,8 +53,7 @@ module.exports = (function router () {
       // add a class `route` to the body
       setBodyClass(route)
       // init route controller
-      
-      controllers[route].init(state, id)
+      controllers[route].init()
       // listen to state changes
       controllers[route].changedState.add((state) => {
         setHashSilently(route + '/' + state)

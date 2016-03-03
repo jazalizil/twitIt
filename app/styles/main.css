@@ -6,4 +6,13 @@ body {
 
 body {
 	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+	background: #eeeeee;
+}
+
+.container {
+	height: 100vh;
+}
+
+.tweet-ctn {
+	min-height: 200px;
 }
